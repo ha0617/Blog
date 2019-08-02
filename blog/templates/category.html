@@ -1,7 +1,6 @@
 {%extends 'base.html'%}
 {%block content%}
-
-<h1>Category</h1>
+    <h1>Category</h1><br>
 
 {%for p in posts%}
     <p>글 번호 : {{p.id}}</p>
@@ -12,3 +11,6 @@
     <p>글 수정 시간 : {{p.updated_at}}</p>
         <hr>
 {%endfor%}
+
+
+{% endblock%}
